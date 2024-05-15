@@ -1,4 +1,4 @@
-package com.mycompany.tp_poo_version1;
+package com.mycompany.tp_mekircha_bousdjira_g01;
 
 public class QstLibreAnamneseEnfant extends QstLibreAnamnese {
 	

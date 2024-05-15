@@ -1,4 +1,4 @@
-package com.mycompany.tp_poo_version1;
+package com.mycompany.tp_mekircha_bousdjira_g01;
 
 // La classe qui génère les objectifs à ajouter aux listes de suivi
 
