@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.tp_poo_version1;
+package com.mycompany.tp_mekircha_bousdjira_g01;
 
 import java.util.*;
 
@@ -25,15 +25,16 @@ public class Cabinet {
 		String adresse = scanner.nextLine();
 		System.out.print("adresse: ");
 		String numTel = scanner.nextLine();
-		System.out.print("numTel: ");
-		Orthophoniste O = new Orthophoniste(nom, prenom, numTel, email, adresse);
+		System.out.print("password: ");
+		String password = scanner.nextLine();
+		Orthophoniste O = new Orthophoniste(nom, prenom, numTel, email,password, adresse);
 		setOrtho.add(O);
 	}
 
 	public boolean Authentifier(Set<Orthophoniste> setOrtho, String email, String password) {
 		
 		for (Orthophoniste O : setOrtho) {
-			if (email.equals(O.getEmail()) && password.equals(O.getPassword())) {
+			if (email.equals(O.getEmail()) && password.equals(O.getMdp())) {
 				return true; 
 			}
 		}

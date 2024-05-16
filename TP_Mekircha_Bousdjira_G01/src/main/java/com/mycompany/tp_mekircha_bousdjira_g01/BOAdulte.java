@@ -4,7 +4,12 @@ public class BOAdulte extends BO {
 
     private String diplome;
     private String profession;
-
+    
+    public BOAdulte(  String diplome, String profession){
+	    this.diplome = diplome;
+	    this.profession = profession;
+	
+    }
     public BOAdulte(Anamnese anamnese, Diagnostic diagnostic, String projetTherapeutique, String numTel, String diplome, String profession) {
         super(anamnese,diagnostic,projetTherapeutique,numTel);
         this.diplome = diplome;

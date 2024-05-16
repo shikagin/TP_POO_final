@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.tp_mekircha_bousdjira_g01;
 
 import java.util.*;
@@ -60,6 +56,13 @@ public class Orthophoniste {
     public String getEmail() {
         return (this.email);
 
+    }
+    public String  getMdp()
+    {
+	    return(this.mdp);
+    }
+    public void setMdp(String mdp){
+	    this.mdp = mdp;
     }
 
     public void setEmail(String email) {

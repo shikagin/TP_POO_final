@@ -10,6 +10,9 @@ public class BO {
 	private String projetTherapeutique;
 	private String numTel;
 
+	public BO() {
+	}
+
 	public BO(Anamnese anamnese, Diagnostic diagnostic, String projetTherapeutique, String numTel) {
 		this.anamnese = anamnese;
 		this.diagnostic = diagnostic;
@@ -25,9 +28,8 @@ public class BO {
 		this.anamnese = anamnese;
 	}
 
-
 	public void setListeEpreuves(ArrayList listeEpreuves) {
-		this.listeEpreuves =  listeEpreuves;
+		this.listeEpreuves = listeEpreuves;
 	}
 
 	public Diagnostic getDiagnostic() {
@@ -56,7 +58,6 @@ public class BO {
 
 	public void creerEpreuveClinique() {
 
-		
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Voulez vous ajouter l'Observation ");
 		String observation = scanner.nextLine();
@@ -64,6 +65,12 @@ public class BO {
 		e.creerTest();
 		this.listeEpreuves.add(e);
 	}
-	
+
+	public void creerAnamnese(TypePatient typeP) {
+
+		Anamnese e = new Anamnese();
+		e.creerTest(typeP);
+		this.anamnese = e;
+	}
 
 }

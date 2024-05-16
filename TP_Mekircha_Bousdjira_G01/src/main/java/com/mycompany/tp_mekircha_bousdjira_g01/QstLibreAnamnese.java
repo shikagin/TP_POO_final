@@ -7,5 +7,13 @@ public abstract class QstLibreAnamnese {
 	public QstLibreAnamnese(String enonce) {
 		this.enonce = enonce;
 	}
+	public String getEnonce()
+	{
+		return(this.enonce);
+	}
+	public void setEnonce(String enonce)
+	{
+		this.enonce = enonce;
+	}
 
 }
